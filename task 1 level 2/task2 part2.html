@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box Example</title>
+</head>
+<body>
+    <h1>Alert Box</h1>
+
+    <script>
+        // Get the current hour
+        const currentHour = new Date().getHours();
+
+        // Determine the appropriate greeting
+        let greeting;
+        if (currentHour < 12) {
+            greeting = "Good morning!";
+        } else if (currentHour < 18) {
+            greeting = "Good afternoon!";
+        } else {
+            greeting = "Good evening!";
+        }
+
+        // Display the greeting in an alert box
+        alert(greeting);
+    </script>
+</body>
+</html>

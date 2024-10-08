@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Color Change</title>
+    <style>
+        .color-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .color-button.clicked {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <button class="color-button" id="colorButton">Click Me!</button>
+
+    <script>
+        document.getElementById('colorButton').addEventListener('click', function() {
+            this.classList.toggle('clicked');
+        });
+    </script>
+</body>
+</html>
